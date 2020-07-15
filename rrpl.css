@@ -1,0 +1,113 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.tudo{
+    border: solid 1px red;
+    width: 100%;
+    height: 100%;
+}
+/*TOPO FIXO*/
+.topofixo{
+    border: solid 1px black;
+    padding: 10px;
+    position: fixed;
+    width: 98%;
+    height: 150px;
+}
+/*LOGO*/
+.logo{
+  border: solid 1px blue; 
+  position: relative;
+  width: 100%; 
+  height: 60%;
+}
+.logo img{
+    width: 120px;
+    height: 100px;
+}
+/*MENU E DOAR*/
+.sublogo{
+    position: relative;
+    padding: 5px;
+  border: solid 1px aqua;
+  width: 100%; 
+  height: 45%;
+}
+/*MENU*/
+.menu{
+ float: left;
+ border: solid 1px green;
+}
+ul{
+    border: solid 1px red;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    top: 5px;
+}
+li{
+    padding: 10px;
+    font-size: larger;
+}
+a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+nav{
+    border: solid 1px indigo;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    left: -300px;
+    transition: all .5s;
+}
+input[type="checkbox"]:checked ~nav{
+transform: translateX(300px);
+}
+label{
+    font-size: larger;
+    z-index: 1;
+}
+/*DOAR*/
+.doar{
+ border: solid 1px brown;
+ float: right;
+}
+/*CONTEUDO*/
+.conteudo{
+border: solid 1px pink;
+}
+#noticias{
+border: solid 1px greenyellow;
+}
+#mapa{
+border: solid 1px blue;
+}
+#batalhas{
+border: solid 1px yellow;
+}
+#recentes{
+border: solid 1px red;
+}
+/*FOOTER*/
+.footer{
+border: solid 1px greenyellow;
+}
+.sobresesh{
+ border: solid 1px orangered;
+}
+.termsesh{
+border: solid 1px black;
+}
+.social{
+border: solid 1px rebeccapurple;
+}
+#copyr{
+border: solid 1px aqua;
+}
