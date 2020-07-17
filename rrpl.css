@@ -13,7 +13,6 @@ ul{
     list-style: none;
 }
 .container{
-    /* width: 100%; */
     min-height: 100%;
 }
 .main{
@@ -68,21 +67,25 @@ color: white;
     display: block;
 }
 .menu a:hover{
-    color: red;
+    color: black;
+    background-color: white;
+    transition: .5s;
+    padding: 10px;
+    margin-left: 10px;
 }
 .menu input[type="checkbox"]{
     display: none;
 }
 .menu nav{
-    width: 300px;
+    width: 350px;
     height: 600px;
     position: absolute;
-    left: -305px;
-    transition: all .5s;
+    left: -355px;
+    transition: .5s;
     background-color: black;
 }
 .menu input[type="checkbox"]:checked ~nav{
-transform: translateX(305px);
+transform: translateX(354px);
 }
 .menu label{
     font-size: larger;
@@ -105,18 +108,19 @@ transform: translateX(305px);
 text-align: center;
 }
 /*NOTICIAS*/
- #noticias{
- border: solid 1px green;
-} 
+#noticias ul{
+    display: inline-table;
+}
 .noti{
-border: solid 1px blue;
-padding: 20px;
 width: 600px;
  height: fit-content;
+ margin: 20px;
+ padding: 20px;
+ display: inline-table;
 }
 /*MAPA DA TEMPORADA*/
 #mapa img{
-width: 90%;
+width: 1400px;
 height: 650px;
 }
 /*EVENTOS*/
@@ -133,11 +137,12 @@ height: 650px;
  height: 400px;
  justify-content: center;
  box-sizing: border-box;
- margin: 0px 10px;
+ margin: 0px 20px;
 }
 #slider{
   overflow-x: auto;
 }
+
 #slide{
   display: flex;
   align-items: center;
@@ -145,9 +150,14 @@ height: 650px;
 #slide a:hover{
 color: red;
 }
+
 /*BATALHAS MAIS RECENTES*/
-#recentes{
-display: grid;
+#recentes ul{
+display: inline-table;
+}
+.recent{
+display: inline-table; 
+margin: 40px;
 }
 #recentes img{
 width: 550px;
@@ -184,11 +194,11 @@ background-color: black;
     height: 80px;
 }
 .redcolasesh{
-    margin-left: 200px;
+    margin-left: 100px;
 }
 .sobresesh{
  width: fit-content;
- margin-left: 500px;
+ margin-left: 300px;
 }
 .termsesh{
 width: fit-content;
@@ -201,16 +211,40 @@ margin-left: 20px;
 }
 #social{
 text-align: center;
-margin-left: 150px;
+margin-left: 100px;
 }
 #social a{
+    width:20px; 
     padding: 10px;
+    margin: 20px;
     font-size: larger;
 }
 #social h4{
     margin-top: 50px;
 }
+/*LOGO DAS REDES*/
+#fb{
+    color: blue;
+    background-color: white;
+    border-radius: 100%;
+}
+#tube{
+    color: red;
+    background-color: white;
+    border-radius: 100%;
+}
+#insta{
+    color: brown;
+    background-color: white;
+    border-radius: 100%;
+}
+#twi{
+    color: lightskyblue;
+    background-color: white;
+    border-radius: 100%;
+}
 #copyr{
 color: white;
 margin-top: 30px;
+font-size: small;
 }
