@@ -2,25 +2,37 @@
     padding: 0px;
     margin: 0px;
 }
-.tudo{
-    border: solid 1px red;
-    width: 100%;
+html, body{
     height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+.container{
+    /* width: 100%; */
+    min-height: 100%;
+}
+.main{
+    overflow: auto;
+    padding-bottom:300px ;
 }
 /*TOPO FIXO*/
 .topofixo{
-    border: solid 1px black;
-    padding: 10px;
     position: fixed;
-    width: 98%;
-    height: 150px;
+    width: 100%;
+    height: 130px;
+    background-color: black;
 }
 /*LOGO*/
 .logo{
-  border: solid 1px blue; 
   position: relative;
   width: 100%; 
-  height: 60%;
+  height: 100px;
+  text-align: center;
 }
 .logo img{
     width: 120px;
@@ -29,85 +41,176 @@
 /*MENU E DOAR*/
 .sublogo{
     position: relative;
-    padding: 5px;
-  border: solid 1px aqua;
   width: 100%; 
-  height: 45%;
+  height: 25px;
 }
 /*MENU*/
 .menu{
+color: white;
  float: left;
- border: solid 1px green;
+ margin-left: 150px;
 }
-ul{
-    border: solid 1px red;
+.menu:hover{
+    color: red;
+}
+.menu ul{
     list-style: none;
     position: absolute;
     width: 100%;
     top: 5px;
 }
-li{
+.menu li{
     padding: 10px;
     font-size: larger;
 }
-a{
-    text-decoration: none;
-    color: black;
+.menu a{
+    color: white;
     display: block;
 }
-
-input[type="checkbox"]{
+.menu a:hover{
+    color: red;
+}
+.menu input[type="checkbox"]{
     display: none;
 }
-nav{
-    border: solid 1px indigo;
+.menu nav{
     width: 300px;
-    height: 500px;
+    height: 600px;
     position: absolute;
-    left: -300px;
+    left: -305px;
     transition: all .5s;
+    background-color: black;
 }
-input[type="checkbox"]:checked ~nav{
-transform: translateX(300px);
+.menu input[type="checkbox"]:checked ~nav{
+transform: translateX(305px);
 }
-label{
+.menu label{
     font-size: larger;
     z-index: 1;
 }
 /*DOAR*/
 .doar{
- border: solid 1px brown;
  float: right;
+ margin-right: 150px;
+ font-size: larger;
+}
+.doar a{
+    color: white;
+}
+.doar a:hover{
+    color: red;
 }
 /*CONTEUDO*/
 .conteudo{
-border: solid 1px pink;
+text-align: center;
 }
-#noticias{
-border: solid 1px greenyellow;
-}
-#mapa{
+/*NOTICIAS*/
+ #noticias{
+ border: solid 1px green;
+} 
+.noti{
 border: solid 1px blue;
+padding: 20px;
+width: 600px;
+ height: fit-content;
 }
-#batalhas{
-border: solid 1px yellow;
+/*MAPA DA TEMPORADA*/
+#mapa img{
+width: 90%;
+height: 650px;
 }
+/*EVENTOS*/
+#bat{
+  width: 99%;
+  display: flex;
+  padding: 10px;
+  margin: 10px auto;
+  justify-content: center; 
+  align-items: center;
+}
+.cbat img{
+ width: 550px;
+ height: 400px;
+ justify-content: center;
+ box-sizing: border-box;
+ margin: 0px 10px;
+}
+#slider{
+  overflow-x: auto;
+}
+#slide{
+  display: flex;
+  align-items: center;
+}
+#slide a:hover{
+color: red;
+}
+/*BATALHAS MAIS RECENTES*/
 #recentes{
-border: solid 1px red;
+display: grid;
+}
+#recentes img{
+width: 550px;
+ height: 400px;
+text-align: center;
+}
+#recentes a:hover{
+    color: red;
 }
 /*FOOTER*/
 .footer{
-border: solid 1px greenyellow;
+position: relative;
+height: 300px;
+margin-top: -300px;
+clear: both;
+background-color: black;
+}
+
+.apoio{
+    display: flex;
+}
+.apoio a, h4, h5{
+    color: white;
+}
+
+.apoio li{
+    margin: 10px;
+}
+.apoio ul{
+    padding: 10px;
+}
+.redcolasesh img{
+    width: 100px;
+    height: 80px;
+}
+.redcolasesh{
+    margin-left: 200px;
 }
 .sobresesh{
- border: solid 1px orangered;
+ width: fit-content;
+ margin-left: 500px;
 }
 .termsesh{
-border: solid 1px black;
+width: fit-content;
 }
-.social{
-border: solid 1px rebeccapurple;
+#cab{
+    margin-top: 30px;
+}
+#cab h4{
+margin-left: 20px;
+}
+#social{
+text-align: center;
+margin-left: 150px;
+}
+#social a{
+    padding: 10px;
+    font-size: larger;
+}
+#social h4{
+    margin-top: 50px;
 }
 #copyr{
-border: solid 1px aqua;
+color: white;
+margin-top: 30px;
 }
