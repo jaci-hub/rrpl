@@ -39,7 +39,7 @@ ul{
 }
 /*MENU E DOAR*/
 .sublogo{
-    position: relative;
+ position: relative;
   width: 100%; 
   height: 25px;
 }
@@ -49,7 +49,7 @@ color: white;
  float: left;
  margin-left: 150px;
 }
-.menu:hover{
+.menu i:hover{
     color: red;
 }
 .menu ul{
@@ -67,8 +67,8 @@ color: white;
     display: block;
 }
 .menu a:hover{
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: red;
     transition: .5s;
     padding: 10px;
     margin-left: 10px;
@@ -103,20 +103,73 @@ transform: translateX(354px);
 .doar a:hover{
     color: red;
 }
+#anteudo{
+    width: 100%;
+    color: white;
+    background-color: red;
+}
 /*CONTEUDO*/
 .conteudo{
 text-align: center;
+}
+
+/*GLADIADORES GERAL*/
+#gladiadores{
+width: 100%;
+height: 500px;
+}
+#atuais{
+    float: left;
+    margin-left: 5%;
+    background-image: url(atuais.jpg);
+}
+.noti h3{
+    color: black;
+}
+#todos{
+    float: right;
+    margin-right: 5%;
+    background-image: url(todos.jpg);
+}
+.rep{
+background-size: cover;
+width: 650px;
+height: 500px;
+}
+.rep h1{
+  padding-top: 45%;
+  color: white;
+}
+/*TEMPORADAS GERAL*/
+.temporadas{
+background-size: cover;
+width: 400px;
+height: 350px;
+}
+.temporadas h1{
+  padding-top: 40%;
+  color: white;
+}
+#tmp{
+    background-image: url(logo.jpg);
+    display: inline-table;
+    margin: 20px;
+    padding: 20px;
 }
 /*NOTICIAS*/
 #noticias ul{
     display: inline-table;
 }
 .noti{
-width: 600px;
+width: 500px;
  height: fit-content;
- margin: 20px;
- padding: 20px;
+ margin: 10px;
+ padding: 10px;
  display: inline-table;
+}
+.noti img{
+    width: 500px;
+    height: 350px;
 }
 /*MAPA DA TEMPORADA*/
 #mapa img{
@@ -142,7 +195,6 @@ height: 650px;
 #slider{
   overflow-x: auto;
 }
-
 #slide{
   display: flex;
   align-items: center;
@@ -150,7 +202,22 @@ height: 650px;
 #slide a:hover{
 color: red;
 }
-
+/*CORPO DE JURADOS*/
+#juri{
+  width: 99%;
+  display: flex;
+  padding: 10px;
+  margin: 10px auto;
+  justify-content: center; 
+  align-items: center;
+}
+.juri img{
+ width: 450px;
+ height: 350px;
+ justify-content: center;
+ box-sizing: border-box;
+ margin: 0px 20px;
+}
 /*BATALHAS MAIS RECENTES*/
 #recentes ul{
 display: inline-table;
@@ -160,8 +227,8 @@ display: inline-table;
 margin: 40px;
 }
 #recentes img{
-width: 550px;
- height: 400px;
+width: 500px;
+ height: 350px;
 text-align: center;
 }
 #recentes a:hover{
@@ -190,15 +257,15 @@ background-color: black;
     padding: 10px;
 }
 .redcolasesh img{
-    width: 100px;
-    height: 80px;
+    width: 150px;
+    height: 130px;
 }
 .redcolasesh{
-    margin-left: 100px;
+    margin-left: 200px;
 }
 .sobresesh{
  width: fit-content;
- margin-left: 300px;
+ margin-left: 200px;
 }
 .termsesh{
 width: fit-content;
@@ -208,10 +275,12 @@ width: fit-content;
 }
 #cab h4{
 margin-left: 20px;
+background-color: red;
+padding: 2px;
 }
 #social{
 text-align: center;
-margin-left: 100px;
+margin-left: 200px;
 }
 #social a{
     width:20px; 
@@ -219,8 +288,8 @@ margin-left: 100px;
     margin: 20px;
     font-size: larger;
 }
-#social h4{
-    margin-top: 50px;
+#social{
+    margin-top: 90px;
 }
 /*LOGO DAS REDES*/
 #fb{
@@ -247,4 +316,5 @@ margin-left: 100px;
 color: white;
 margin-top: 30px;
 font-size: small;
+text-align: center;
 }

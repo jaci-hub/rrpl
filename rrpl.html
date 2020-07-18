@@ -2,29 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=.1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="rrpl.css">
     <title>rrpl</title>
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="c5e5C3Bs"></script>
 <div class="container">
     <div class="main">
         <div class="topofixo">
             <div class="logo">
-                <a href=""><img src="rrplimg.jpg" alt=""></a>
+                <a href=""><img src="rrplimg.jpg"></a>
             </div>
             <div class="sublogo">
                 <div class="menu">
                     <input type="checkbox" id="check">
                     <label for="check" id="lab">
-                        <i class="fa fa-bars"> Menu</i>
+                        <i class="fa fa-bars"> MENU</i>
                     </label>
                     <nav>
                         <ul>
-                            <li><a href="">Inicio</a></li>
-                            <li><a href="">Gladiadores</a></li>
-                            <li><a href="">Temporadas</a></li>
+                            <li><a href="rrpl.html">Inicio</a></li>
+                            <li><a href="gladiadores.html">Gladiadores</a></li>
+                            <li><a href="temporadas.html">Temporadas</a></li>
                             <li><a href="">Organizacao</a></li>
                             <li><a href="">Sobre</a></li>
                             <li><a href="">Contactos</a></li>
@@ -33,12 +35,15 @@
                     </nav>
                 </div>
                 <div class="doar">
-                    <a href="">Doar</a>
+                    <a href="doar.html">DOAR</a>
                 </div>
             </div>
         </div>
-        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
+        
         <div class="conteudo">
+            <div id="anteudo">TEMPORADA 7| 2020</div>
+            <br><br>
             <h2>Noticias e Anuncios</h2>
             <br>
             <div id="noticias">
@@ -47,7 +52,7 @@
                         <a href="">
                             <h3>Titulo da noticia</h3>
                             <br>
-                            <img src="ev2.jpg">
+                            <img src="ev4.jpg">
                             <br><br>
                             <p>Descricao aqui Descricao aqui Descricao aqui Descricao aqui
                                 Descricao aqui Descricao aqui Descricao aqui Descricao aqui
@@ -81,7 +86,7 @@
                         <a href="">
                             <h3>Titulo da noticia</h3>
                             <br>
-                            <img src="ev2.jpg">
+                            <img src="ev3.jpg">
                             <br><br>
                             <p>Descricao aqui Descricao aqui Descricao aqui Descricao aqui
                                 Descricao aqui Descricao aqui Descricao aqui Descricao aqui
@@ -98,7 +103,7 @@
                         <a href="">
                             <h3>Titulo da noticia</h3>
                             <br>
-                            <img src="ev2.jpg">
+                            <img src="ev7.jpg">
                             <br><br>
                             <p>Descricao aqui Descricao aqui Descricao aqui Descricao aqui
                                 Descricao aqui Descricao aqui Descricao aqui Descricao aqui
@@ -113,9 +118,10 @@
                     </div>
                 </ul>
             </div>
-            <br><br>
+
+            <br><br><br>
             <div id="mapa">
-                <h2>Mapa da temporada</h2>
+                <h2>Mapa da Temporada</h2>
                 <br><br>
                 <img src="mapa.png">
             </div>
@@ -136,7 +142,21 @@
                 </div>
             </div>
             <br><br>
-            <h2>Batalhas mais recentes</h2>
+            <div class="batalhas">
+                <h2>Corpo de Jurados</h2>
+                <br>
+                <div id="juri" class="juri">
+                    <div id="slider">
+                        <div id="slide">
+                            <h3><img src="ev2.jpg"><br><br>X<br><br></h3>
+                            <h3><img src="ev3.jpg"><br><br>Y<br><br></h3>
+                            <h3><img src="ev5.jpg"><br><br>Z<br><br></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <h2>Recentes</h2>
             <br>
             <div id="recentes">
                 <ul>
@@ -168,7 +188,7 @@
         <div class="apoio">
             <div class="redcolasesh" id="cab">
                 <a href=""><img src="redcola.png"></a>
-                <h5>Patrocinador oficial</h5>
+                <h5>PATROCINADOR OFICIAL</h5>
             </div>
             <div class="sobresesh" id="cab">
                 <h4>Paginas</h4>
@@ -176,24 +196,23 @@
                     <li><a href="">Sobre</a></li>
                     <li><a href="">Organizacao</a></li>
                     <li><a href="">Contactos</a></li>
+                    <li><a href="">Perguntas frequentes</a></li>
                 </ul>
             </div>
             <div class="termsesh" id="cab">
                 <h4>Termos & Condicoes</h4>
                 <ul>
-                    <li><a href="">Termos de uso</a></li>
+                    <li><a href="">Termos gerais</a></li>
                     <li><a href="">Guia do site</a></li>
-                    <li><a href="">Especificacoes</a></li>
+                    <li><a href="">Politicas de privacidade</a></li>
                     <li><a href="">Suporte</a></li>
                 </ul>
             </div>
             <div id="social" id="cab">
-                <h4>Siga-nos</h4>
-                <br>
-                <a id="fb" class="fa fa-facebook" href=""></a>
-                <a id="tube" class="fa fa-youtube-play" href=""></a>
-                <a id="insta" class="fa fa-instagram" href=""></a>
-                <a id="twi" class="fa fa-twitter" href=""></a>
+                <a id="fb" class="fa fa-facebook" href="https://pt-br.facebook.com/RrplOficial"></a>
+                <a id="tube" class="fa fa-youtube-play" href="https://www.youtube.com/user/reisdorompimentotv"></a>
+                <a id="insta" class="fa fa-instagram" href="https://www.instagram.com/explore/tags/rrpl/"></a>
+                <a id="twi" class="fa fa-twitter" href="https://twitter.com/r_r_p_l"></a>
             </div>
         </div>
         <br><br><br>
