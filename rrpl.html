@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=.1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="rrpl.css">
+    <script src="jquery.js"></script>
+    <script>
+        $(function(){
+            $(".sublogo a").on('click', function(){
+                $("html, body").animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top-150
+                }, 500);
+            });
+        });
+    </script>
     <title>rrpl</title>
 </head>
 <body>
@@ -18,9 +28,9 @@
                 <a href="rrpl.html"><img src="rrplimg.jpg"></a>
             </div>
             <div class="sublogo">
-                <a href="eventos.html"><div>EVENTOS</div></a>
+                <a href="#batalhas"><div>EVENTOS</div></a>
                 <a href="gladiadores.html"><div>GLADIADORES</div></a>
-                <a href="juris.html">
+                <a href="#jurados">
                     <div>JURIS</div>
                 </a>
                 <a href="ingressos.html">
@@ -164,14 +174,13 @@
                             href="https://pt-br.facebook.com/RrplOficial">Reis do Rompimento Primeira Liga #RRPL</a></blockquote>
                 </div>
             </div>
-
-            <br><br><br>
+            <br><br>
             <div id="mapa">
                 <h2>Mapa da Temporada</h2>
                 <br><br>
                 <img src="mapa.png">
             </div>
-            <br><br>
+            <br><br><br><br>
             <div class="publicidade">
                 <div id="redcola">
                     <video src="redpub.mp4" autoplay muted loop></video>
@@ -180,7 +189,7 @@
                     <a href="https://www.instagram.com/redcola_oficial/"><img src="pub.jpg"></a>
                 </div>
             </div>
-            <br><br>
+            <br><br><br><br>
             <div id="batalhas">
                 <h2>Eventos</h2>
                 <br>
@@ -197,7 +206,7 @@
                 </div>
             </div>
             <br><br>
-            <div class="batalhas">
+            <div id="jurados">
                 <h2>Corpo de Jurados</h2>
                 <br>
                 <div id="juri" class="juri">
@@ -210,10 +219,11 @@
                     </div>
                 </div>
             </div>
+            <br><br>
             <div class="red">
                 <a href="https://www.instagram.com/explore/tags/redcola/top/"><img src="red.jpg"></a>
             </div>
-            <br><br>
+            <br><br><br><br>
             <h2>Recentes</h2>
             <br>
             <div id="recentes">

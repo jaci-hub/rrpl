@@ -17,7 +17,7 @@ ul{
 }
 .main{
     overflow: auto;
-    padding-bottom: 20% ;
+    padding-bottom: 20%;
 }
 /*TOPO FIXO*/
 .topofixo{
@@ -254,26 +254,22 @@ text-align: center;
 footer{
 position: relative;
 min-width: 100%;
+width: 100%;
 min-height: 300px;
-/* height: 300px; */
 margin-top: -300px;
-/* clear: both; */
 background-color: black;
 }
 .apoio{
     display: flex;
-    border: solid 1px red;
+    overflow: auto;
 }
 .apoio a, h4, h5{
     color: white;
 }
-
 .apoio li{
-    border: solid 1px blue;
     margin: 10px;
 }
 .apoio ul{
-    border: solid 1px aquamarine;
     padding: 10px;
 }
 .redcolasesh img{
@@ -300,11 +296,11 @@ background-color: red;
 padding: 2px;
 }
 #social{
-    border: solid 1px indigo;
 text-align: center;
-height: ;
+width: fit-content;
+height: fit-content;
 margin-left: 13%;
-margin-top: 6%;
+margin-top: 3%;
 }
 #social a{
     width:20px; 
@@ -339,5 +335,4 @@ color: black;
 background-color: white;
 font-size: small;
 text-align: center;
-border: solid 1px palegreen;
 }
