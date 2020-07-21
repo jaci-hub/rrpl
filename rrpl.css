@@ -77,6 +77,13 @@ margin-left: -28%;
 width: 100%;
 height: 500px;
 }
+.gladlist{
+width: 30%;
+height: 30%;
+display: inline-table;
+padding: 10px;
+margin: 10px;
+}
 #atuais{
     float: left;
     margin-left: 5%;
@@ -225,15 +232,22 @@ color: red;
  margin: 0px 20px;
 }
 /*PUBLICIDADE DA REDCOLA*/
-.red{
+#maispubl{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
     background-color: black;
-    padding: 2%;
-    margin: 0;
+}
+.red{
+    width: 500px;
+    height: 550px;
 }
 .red img{
-    width: 90%;
-    height: 30%;
+    height: 100%;
+    width: 100%;
 }
+
 /*BATALHAS MAIS RECENTES*/
 #recentes ul{
 display: inline-table;
